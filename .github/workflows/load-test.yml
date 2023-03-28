@@ -19,9 +19,7 @@ jobs:
           filename: scripts/k6Aws.js
 
       - run: 
-          ls
-          mkdir report
-          mv index.html report
+          ls & mkdir report & mv index.html report
 
       - name: step 3 - upload artifact
         uses: actions/upload-artifact@v3
