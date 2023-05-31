@@ -16,7 +16,7 @@ jobs:
       - name: step 2 - run k6 load test
         uses: grafana/k6-action@v0.2.0
         with:
-          filename: scripts/k6Aws.js
+          filename: scripts/qaevolucaok6git.js
 
       - run: 
           ls & mkdir report & mv index.html report
